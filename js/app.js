@@ -81,8 +81,8 @@ Player.prototype.update = function(dt) {
    // when the player want to change the chrecter 
    if(this.x===402&&this.y==400){
     changePlayer();
-    player.x=202;
-    player.y=400;
+    this.x  = 202;
+    this.y = 400;
    } 
 };
 /**
@@ -103,7 +103,7 @@ Player.prototype.handleInput=function(direction){
        console.log("the cardinate of y is "+this.y);
     }
    // if the player reach the end 
-    if(player.y==-15){
+    if(this.y==-15){
        console.log("Bravvo you Win !");
        alert("Bravvo you Win ! your score is "+score);
        player.x=202;
